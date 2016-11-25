@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/call_contact"
+        android:icon="@drawable/ic_call_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/attach_file"
+        android:icon="@drawable/ic_attach_file_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/attach"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search_messages"
+        android:icon="@drawable/ic_search_24dp"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/view_contact"
+        android:orderInCategory="100"
+        android:title="@string/view_contact"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/clear_chat"
+        android:orderInCategory="100"
+        android:title="@string/clear_chat"
+        app:showAsAction="never" />
+</menu>

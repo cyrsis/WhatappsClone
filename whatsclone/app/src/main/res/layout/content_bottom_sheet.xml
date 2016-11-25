@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/cameraBtn"
+            android:layout_width="@dimen/slide_down_message_items"
+            android:layout_height="@dimen/slide_down_message_items"
+            android:background="@drawable/bg_item_round_ripple">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_attach_camera"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_photo_camera_white_48dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="@string/attach_camera" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/galleryBtn"
+            android:layout_width="@dimen/slide_down_message_items"
+            android:layout_height="@dimen/slide_down_message_items"
+            android:background="@drawable/bg_item_round_ripple">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_attach_gallery"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_photo_white_48dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="@string/attach_gallery" />
+    </LinearLayout>
+
+
+</FrameLayout>

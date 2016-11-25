@@ -1,0 +1,286 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sourcecanyon.whatsClone">
+
+    <!-- permissions for Network -->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- permissions for SMS -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- permissions for contacts -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- Authenticator -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <!-- Storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- Audio -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--Camera-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="false"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.sourcecanyon.whatsClone.app.WhatsCloneApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.main.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- MainActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.main.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.novasera.wakizz.messaging‌​" />
+
+            </intent-filter>-->
+        </activity>
+
+
+        <!--    MessagesActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.messages.MessagesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.main.MainActivity" />
+        </activity>
+
+        <!--  CreateGroupActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.groups.CreateGroupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--  AddMembersToGroupActivity -->
+        <activity android:name="com.sourcecanyon.whatsClone.activities.groups.AddMembersToGroupActivity" />
+
+        <!--  AddNewMembersToGroupActivity -->
+        <activity android:name="com.sourcecanyon.whatsClone.activities.groups.AddNewMembersToGroupActivity" />
+
+        <!--  TransferMessageContactsActivity -->
+        <activity android:name="com.sourcecanyon.whatsClone.activities.messages.TransferMessageContactsActivity" />
+
+        <!--  ChatsSettingsActivity -->
+        <activity android:name="com.sourcecanyon.whatsClone.activities.settings.ChatsSettingsActivity" />
+        <!--  NotificationsSettingsActivity -->
+        <activity android:name="com.sourcecanyon.whatsClone.activities.settings.NotificationsSettingsActivity" />
+        <!--  AccountSettingsActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.settings.AccountSettingsActivity"
+            android:label="@string/title_activity_account_settings"
+            android:theme="@style/AppTheme" />
+        <!--  DeleteAccountActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.settings.DeleteAccountActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_delete_account"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <!--  ChangeNumberActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.settings.ChangeNumberActivity"
+            android:label="@string/title_activity_change_number"
+            android:theme="@style/AppTheme" />
+
+        <!--  ChangeNumberActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.settings.AboutActivity"
+            android:theme="@style/AppTheme" />
+        <!-- ProfilePreviewActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.profile.ProfilePreviewActivity"
+            android:theme="@style/Dialog"
+            android:windowActionBar="false" />
+        <activity android:name="com.sourcecanyon.whatsClone.activities.profile.ProfileActivity" />
+
+        <!-- SMS Receiver -->
+        <receiver android:name="com.sourcecanyon.whatsClone.receivers.SmsReceiverBroadCast">
+            <intent-filter android:priority="99999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent service for OTP -->
+        <service
+            android:name="com.sourcecanyon.whatsClone.services.SMSVerificationService"
+            android:exported="false" />
+        <!-- AuthenticationService -->
+        <service
+            android:name="com.sourcecanyon.whatsClone.sync.AuthenticatorService"
+            android:exported="true"
+            android:process=":auth">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <!-- SyncService for SyncAdapter -->
+        <service
+            android:name="com.sourcecanyon.whatsClone.sync.SyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter" />
+            <!--
+                        <meta-data
+                            android:name="android.provider.CONTACTS_STRUCTURE"
+                            android:resource="@xml/sync_contacts" />
+            -->
+        </service>
+
+        <!-- SettingsActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- SearchConversationsActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.search.SearchConversationsActivity"
+            android:label="@string/title_activity_settings" />
+
+        <!-- SearchContactsActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.search.SearchContactsActivity"
+            android:label="@string/title_activity_settings" />
+
+
+        <!-- EditProfileActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.profile.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!-- StatusActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.status.StatusActivity"
+            android:label="@string/title_activity_status"
+            android:theme="@style/AppTheme" />
+        <!-- StatusDelete -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.popups.StatusDelete"
+            android:theme="@style/Dialog"
+            android:windowActionBar="false" />
+        <!-- EditStatusActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.status.EditStatusActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_edit_status"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- EditUsernameActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.profile.EditUsernameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_edit_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- EditGroupActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.groups.EditGroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_edit_group_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- NewConversationContactsActivity -->
+        <activity
+            android:name="com.sourcecanyon.whatsClone.activities.NewConversationContactsActivity"
+            android:label="@string/title_select_contacts"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- Restart service when the user kill processor -->
+
+        <service
+            android:name=".services.BootService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_service_name"
+            android:process=":remote" />
+
+
+        <receiver android:name="com.sourcecanyon.whatsClone.receivers.NetworkChangeListener">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- the main service  -->
+        <service
+            android:name=".services.MainService"
+            android:enabled="true"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_service_name">
+            <intent-filter>
+                <action android:name="new_user_message_notification" />
+                <action android:name="new_group_message_notification" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

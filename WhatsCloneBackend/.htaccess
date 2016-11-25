@@ -1,0 +1,55 @@
+Options All -Indexes
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
+RewriteRule ^(.*)$ - [E=BASE:%1]
+
+# Authentication Operations
+RewriteRule ^Join api.php?cmd=Join
+RewriteRule ^VerifyUser api.php?cmd=verifyUser
+RewriteRule ^Resend api.php?cmd=resend
+
+# Contacts Operations
+RewriteRule ^SendContacts api.php?cmd=SendContacts
+RewriteRule ^GetContact/([0-9]+)$ api.php?cmd=GetContact&userID=$1
+RewriteRule ^GetStatus api.php?cmd=GetStatus
+RewriteRule ^DeleteStatus/([0-9]+)$ api.php?cmd=DeleteStatus&statusID=$1
+RewriteRule ^DeleteAllStatus  api.php?cmd=DeleteAllStatus
+RewriteRule ^UpdateStatus/([0-9]+)$ api.php?cmd=UpdateStatus&statusID=$1
+RewriteRule ^EditStatus api.php?cmd=EditStatus
+RewriteRule ^EditName api.php?cmd=EditName
+RewriteRule ^uploadImage api.php?cmd=uploadImage
+RewriteRule ^DeleteAccount  api.php?cmd=DeleteUserAccount
+
+# Messages Operations
+RewriteRule ^Messages/send api.php?cmd=sendMessage
+
+
+# Groups Operations
+RewriteRule ^Groups/createGroup api.php?cmd=createGroup
+RewriteRule ^Groups/addMembersToGroup api.php?cmd=addMembersToGroup
+RewriteRule ^Groups/removeMemberFromGroup api.php?cmd=removeMemberFromGroup
+RewriteRule ^Groups/makeMemberAdmin api.php?cmd=makeMemberAdmin
+RewriteRule ^Groups/all api.php?cmd=getGroups
+RewriteRule ^GetGroup/([0-9]+)$ api.php?cmd=GetGroup&groupID=$1
+RewriteRule ^GetGroupMembers/([0-9]+)$ api.php?cmd=GetGroupMembers&groupID=$1
+RewriteRule ^GroupMessages/get/([0-9]+)/([0-9]+)$ api.php?cmd=getGroupMessages&groupID=$1&page=$2
+RewriteRule ^ExitGroup/([0-9]+)$ api.php?cmd=ExitGroup&groupID=$1
+RewriteRule ^DeleteGroup/([0-9]+)$ api.php?cmd=DeleteGroup&groupID=$1
+RewriteRule ^EditGroupName api.php?cmd=EditGroupName
+RewriteRule ^uploadGroupImage api.php?cmd=uploadGroupImage
+RewriteRule ^Groups/send api.php?cmd=sendMessageGroup
+RewriteRule ^Groups/saveMessage api.php?cmd=saveMessageGroup
+RewriteRule ^Groups/checkUnsentMessageGroup api.php?cmd=checkUnsentMessageGroup
+
+#Files
+RewriteRule ^uploadMessagesImage api.php?cmd=uploadMessagesImage
+RewriteRule ^uploadMessagesAudio api.php?cmd=uploadMessagesAudio
+RewriteRule ^uploadMessagesDocument api.php?cmd=uploadMessagesDocument
+RewriteRule ^uploadMessagesVideo api.php?cmd=uploadMessagesVideo
+
+#ini_set('upload_max_filesize', '10M');
+#ini_set('post_max_size', '10M');
+#ini_set('max_input_time', 300);
+#ini_set('max_execution_time', 300);
+

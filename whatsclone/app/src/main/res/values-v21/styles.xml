@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="AppTheme" parent="AppTheme.Base">
+		<item name="android:colorPrimary">@color/colorPrimary</item>
+		<item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="android:colorAccent">@color/colorAccent</item>
+		<item name="android:colorControlHighlight">@color/colorPrimaryLight</item>
+		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+
+		<!-- enable window content transitions -->
+		<item name="android:windowContentTransitions">true</item>
+
+		<!-- enable overlap of transitions -->
+		<item name="android:windowAllowEnterTransitionOverlap">true</item>
+		<item name="android:windowAllowReturnTransitionOverlap">true</item>
+		<!-- ActionMode Styles -->
+		<item name="android:actionModeBackground">@color/colorGrayDarker</item>
+		<item name="android:backgroundStacked">@color/colorAccent</item>
+		<item name="android:backgroundSplit">@color/colorGrayDarker</item>
+	</style>
+	<!-- transparnet for profile -->
+	<style name="ProfileTheme.Detail"
+	       parent="AppTheme">
+		<item name="android:statusBarColor">@color/colorPrimary</item>
+	</style>
+
+	<style name="Dialog"
+	       parent="Theme.AppCompat.Light.Dialog">
+		<item name="android:windowActionModeOverlay">false</item>
+		<!-- <item nameMessaging="android:windowBackground">@android:color/transparent</item> -->
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+
+	<style name="option"
+	       parent="Theme.AppCompat.Light">
+
+	</style>
+
+</resources>

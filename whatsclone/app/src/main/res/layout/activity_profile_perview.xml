@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/containerProfileInfo"
+        android:layout_width="250dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/userProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:layout_gravity="center_horizontal|top"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimary"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="#3f000000"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.rockerhieu.emojicon.EmojiconTextView
+                    android:id="@+id/userProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/actionProfileArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ContactBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_chat_bubble_gray_24dp" />
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/AboutBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_about_gray_24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/InviteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/invite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

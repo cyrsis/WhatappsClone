@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="message_font_size_names">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+
+    <string-array name="message_font_size_values">
+        <item>14</item>
+        <item>18</item>
+        <item>22</item>
+    </string-array>
+
+
+    <string-array name="wallpaper_names">
+        <item>Gary</item>
+        <item>White</item>
+        <item>Blue</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Rose</item>
+        <item>American Rose</item>
+        <item>Aquamarine</item>
+        <item>Auburn</item>
+        <item>Azure</item>
+        <item>Banana Mania</item>
+        <item>Bittersweet</item>
+    </string-array>
+
+
+    <string-array name="wallpaper_values">
+        <item>#E6E6E6</item>
+        <item>#FFFFFF</item>
+        <item>#B2EBF2</item>
+        <item>#00BCD4</item>
+        <item>#0EC654</item>
+        <item>#FF5722</item>
+        <item>#E91E63</item>
+        <item>#FF033E</item>
+        <item>#7FFFD4</item>
+        <item>#A52A2A</item>
+        <item>#007FFF</item>
+        <item>#FAE7B5</item>
+        <item>#FE6F5E</item>
+    </string-array>
+
+
+
+
+    <string-array name="light_names">
+        <item>Blue</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Metallic</item>
+    </string-array>
+
+
+    <string-array name="light_values">
+
+        <item>#03A9F4</item>
+        <item>#ffffff</item>
+        <item>#f11409</item>
+        <item>#EEFF41</item>
+        <item>#0EC654</item>
+        <item>#00FFFF</item>
+        <item>#0A7E8C</item>
+    </string-array>
+</resources>

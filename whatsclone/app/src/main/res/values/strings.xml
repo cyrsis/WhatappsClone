@@ -1,0 +1,282 @@
+<resources>
+    <string name="app_name">WhatsClone</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_home">Home</string>
+    <string name="title_Friends">Friends</string>
+    <string name="title_conversations">Chats</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_feed_back"><![CDATA[Help & Feedback]]></string>
+    <string name="more">More</string>
+    <string name="title_sign_out">Log out</string>
+    <string name="selected_count">%1$s selected</string>
+    <!-- icons -->
+    <string name="icon_login_password">&#xf023;</string>
+    <string name="icon_phone_mobile">&#xf10b;</string>
+    <string name="icon_register_user">&#xf007;</string>
+    <string name="icon_remove">&#xf00d;</string>
+
+    <string name="number">Phone number</string>
+    <string name="Password">Password</string>
+    <string name="title_Sign_in">Sign in</string>
+    <string name="ForgetPassword">Forget Password ?</string>
+    <string name="ConfirmPassword">Confirm the password</string>
+    <string name="Fullname">Fullname</string>
+    <string name="title_sign_up">Sign up</string>
+    <string name="Passwords_does_not_match">Password doesn\'t match</string>
+    <string name="NoMessages">you have no conversations yet</string>
+    <string name="NoGroups">there\'s no group you may create one </string>
+    <string name="error_response">Unable to update.</string>
+    <string name="NoContacts">There is no contacts try to add one</string>
+    <string name="type_msg">Type a message</string>
+    <string name="NoResult">Nothing</string>
+    <string name="error_response_contacts">Unable to update your contacts.</string>
+    <string name="error_response_conversations">Unable to update conversations.</string>
+    <string name="error_response_groups">Unable to update groups.</string>
+    <string name="error_response_messages">Unable to update messages.</string>
+    <string name="name_is_too_short">the name is too short</string>
+    <string name="select_picture">select an image</string>
+    <string name="new_group">New group</string>
+    <string name="starred_messages">Starred messages</string>
+    <string name="status">Status</string>
+    <string name="settings">Settings</string>
+    <string name="refresh_contacts">Refresh</string>
+    <string name="search">Search</string>
+    <string name="add_contact">addContact</string>
+    <string name="new_message">New Message</string>
+    <string name="use_whats_clone">hey i\'m using …</string>
+    <string name="title_activity_add_members_to_group">New group</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_edit_profile">Profile</string>
+    <string name="picture_profile">Profile preview</string>
+    <string name="share">Share</string>
+    <string name="edit">Edit</string>
+    <string name="view_in_ad_book">View in address book</string>
+    <string name="hello_welcome_to_whats_clone">Welcome</string>
+    <string name="next">Next</string>
+    <string name="set_back_and_keep_calm_you_will_receive_an_sms_of_verification">Set back and keep calm you will receive an sms of verification</string>
+    <string name="resend">Resend</string>
+    <string name="enter_the_code_below_to_verify">Enter the code below to verify</string>
+    <string name="enter_your_code">Enter your code</string>
+    <string name="ok">OK</string>
+    <string name="please_enter_your_ver_code">Please enter your verification code</string>
+    <string name="enter_a_val_number">Enter a valid number phone</string>
+    <string name="change_number">Change number</string>
+    <string name="invite">INVITE</string>
+    <string name="your_current_status">Your current status</string>
+    <string name="select_your_new_status">Select your new status</string>
+    <string name="title_activity_status">Status</string>
+    <string name="Make_sure_delete_status">Do you want to delete this status</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="delete">Delete</string>
+    <string name="delete_status">Delete status</string>
+    <string name="cancel">Cancel</string>
+    <string name="Ok">OK</string>
+    <string name="write_something">Write something</string>
+    <string name="error_response_status">Unable to get status</string>
+    <string name="title_activity_edit_status">Edit status</string>
+    <string name="deleteALL">Delete All</string>
+    <string name="oops_something">Oops something went wrong</string>
+    <string name="no_status">** no status **</string>
+    <string name="no_username">** no username **</string>
+    <string name="edit_status_activity_title">Edit Your Status</string>
+    <string name="title_activity_edit_name">Enter your name</string>
+    <string name="title_select_contacts">Select  contact</string>
+    <string name="success_response_contacts">Your contacts has been  updated successfully</string>
+    <string name="images_directory">Images</string>
+    <string name="videos_directory">Vidoes</string>
+    <string name="audios_directory">Audio</string>
+    <string name="documents_directory">Documents</string>
+    <string name="images_profile_directory">Images Profile</string>
+    <string name="images_other_directory"> Image Others</string>
+    <string name="edit_group_name">edit group name</string>
+    <string name="exit">Exit</string>
+    <string name="shareContact">Share contact</string>
+
+    <!--socket io -->
+    <string name="isTyping">Typing  …</string>
+    <string name="isOffline">Offline</string>
+    <string name="isOnline">Online</string>
+    <string name="lastSeen">Last seen</string>
+
+
+    <!-- Date format -->
+    <string name="date_format_today">HH:mm</string>
+    <string name="date_format_current_month">dd/MM/yyyy HH:mm</string>
+    <string name="date_format_yesterday">YESTERDAY</string>
+    <string name="date_format">d/M/yy</string>
+    <string name="call">Call</string>
+    <string name="attach">Attach</string>
+    <string name="app_service_name">main service</string>
+    <string name="search_">Search …</string>
+    <string name="add_new_member">Add</string>
+    <string name="type_group_subject_here">Type group subject here …</string>
+    <string name="provide_group_subject_and_optional_group_icon">Provide group subject and optional group icon</string>
+    <string name="title_activity_edit_group_name">Enter new subject</string>
+    <string name="attach_contact">Contact</string>
+    <string name="attach_video">Video</string>
+    <string name="attach_video_record">Record video</string>
+    <string name="attach_location">Location</string>
+    <string name="attach_audio">Audio</string>
+    <string name="attach_camera">Camera</string>
+    <string name="attach_gallery">Image</string>
+    <string name="attach_document">Document</string>
+    <string name="media">Media</string>
+    <string name="clear_chat">Clear Chat</string>
+    <string name="view_contact">View Contact</string>
+    <string name="group_info">Group Info</string>
+    <string name="search_hint">Search …</string>
+    <string name="alert_message_delete_conversation">Delete chat. Are you sure?</string>
+    <string name="join_title">SIGN UP</string>
+    <string name="hold_to_record">Hold to record</string>
+    <string name="picture_transition">Picture transition</string>
+    <string name="user_image_transition">userImage</string>
+    <string name="user_name_transition">userName</string>
+
+    <!-- Permissions strings start -->
+    <string name="camera_permission">Camera Permission</string>
+    <string name="audio_permission">Audio Permission</string>
+    <string name="storage_permission">Storage Permission</string>
+    <string name="contacts_permission">Contacts Permission</string>
+    <string name="vibrate_permission">Vibrate Permission</string>
+    <string name="receive_sms_permission">Receive sms Permission</string>
+    <string name="read_sms_permission">Read sms Permission</string>
+    <string name="call_phone_permission">Call Phone Permission</string>
+    <string name="get_accounts_permission">Call Phone Permission</string>
+    <string name="camera_permission_message">Camera permission allows you to take pictures and capture videos. Please allow in App Settings for additional functionality.</string>
+    <string name="record_audio_permission_message">Record audio permission allows you to  record audios. Please allow in App Settings for additional functionality.</string>
+    <string name="settings_audio_permission_message">Modify audio permission allows us access to your audios. Please allow in App Settings for additional functionality.</string>
+    <string name="write_storage_permission_message">Write External permission allows us  access to your media. Please allow in App Settings for additional functionality.</string>
+    <string name="read_storage_permission_message">Read External permission allows us to read your media. Please allow in App Settings for additional functionality.</string>
+    <string name="read_contacts_permission_message">Read Contacts permission allows us to read your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="write_contacts_permission_message">Write Contacts permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="vibrate_permission_message">Vibrate permission . Please allow in App Settings for additional functionality.</string>
+    <string name="receive_sms_permission_message">Receive sms permission allows you  to receive SMS messages. Please allow in App Settings for additional functionality.</string>
+    <string name="read_sms_permission_message">Read sms permission allows us access to your SMS messages. Please allow in App Settings for additional functionality.</string>
+    <string name="call_phone_permission_message">Call phone permission allows you make calls. Please allow in App Settings for additional functionality.</string>
+    <string name="get_accounts_permission_message">Get accounts permission . Please allow in App Settings for additional functionality.</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="yes">Yes</string>
+
+    <!--Permissions strings end -->
+
+    <string name="deleting_chat">" Deleting Chat … "</string>
+    <string name="copy_message">Copy</string>
+    <string name="transfer_message">Transfer</string>
+    <string name="message_delete">Delete message?</string>
+    <string name="message_copy">Text message</string>
+
+    <!--settings strings-->
+    <string name="about_and_help">About and Help</string>
+    <string name="contacts">Contacts</string>
+    <string name="notifications">Notifications</string>
+    <string name="chats">Chats</string>
+    <string name="account">Account</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="chat_settings">Chat settings</string>
+    <string name="enter_key_off">Enter key will add new line</string>
+    <string name="enter_key_on">Enter key will send your message</string>
+    <string name="enter_key">Enter key is send</string>
+    <string name="message_font_size">Font size</string>
+    <string name="message_font_size_summary">Font size for messages</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="conversation_tones_off">Play sounds for incoming and outgoing messages</string>
+    <string name="message_notifications_settings">Message notifications</string>
+    <string name="notifications_settings_tone">Notification tone</string>
+    <string name="default_settings">Default</string>
+    <string name="message_notifications_settings_vibrate">Vibrate</string>
+    <string name="message_notifications_settings_light">Light</string>
+    <string name="conversation_tones">Conversations tones</string>
+    <string name="message_group_notifications_settings">Group Notifications</string>
+    <string name="key_enter_send">enter_send</string>
+    <string name="key_message_font_size">message_font_size</string>
+    <string name="key_wallpaper_message">wallpaper_message</string>
+    <string name="title_activity_delete_account">Delete Account</string>
+    <string name="title_activity_change_number">Change number</string>
+    <string name="title_activity_account_settings">Account</string>
+    <string name="key_conversations_tones">conversation_tones</string>
+    <string name="key_message_notifications_settings_tone">message_notifications_settings_tone</string>
+    <string name="message_notifications_settings_tone_silent">Silent</string>
+    <string name="key_message_notifications_settings_vibrate">message_notifications_settings_vibrate</string>
+    <string name="connection_is_available">Connected</string>
+    <string name="connection_is_not_available">No Internet Connection</string>
+    <string name="select_one_at_least">"At least you must select one "</string>
+    <string name="participants">Participants :</string>
+    <string name="group_created_successfully">Group created successfully</string>
+    <string name="create_group_failed">Create group failed</string>
+    <string name="please_choose_an_avatar">Please choose an avatar</string>
+    <string name="slide_to_cancel_audio">Slide To Cancel</string>
+    <string name="message_is_copied">Message copied</string>
+    <string name="of">" of "</string>
+    <string name="failed_upload_image">"Failed  upload your image "</string>
+
+    <!--group adapters start -->
+    <string name="exit_group">Exit \"</string>
+    <string name="group_ex">\" group?</string>
+    <string name="exiting_group_dialog">" Exiting group … "</string>
+    <string name="deleting_group_dialog">" Deleting group … "</string>
+    <string name="created_by_you_at">Created by You at</string>
+    <string name="created_by">"Created by "</string>
+    <string name="group_at">at</string>
+    <string name="failed_to_delete_this_group_check_connection">Failed to delete this group check your connection</string>
+    <string name="failed_to_exit_this_group_check_connection">Failed to exit this group check your connection</string>
+    <string name="adding_new_status">Adding new status …</string>
+    <string name="add_to_group">"Add "</string>
+    <string name="member_to_group">" member to group"</string>
+    <string name="adding_member">" Adding member … "</string>
+    <string name="failed_to_add_member_to_group">Failed to add member(s) please try again later</string>
+    <string name="you">You</string>
+    <!--group member options start -->
+    <string name="message_group_option">"Message "</string>
+    <string name="view_group_option">"View "</string>
+    <string name="make_admin_group_option">Make group admin</string>
+    <string name="remove_group_option">"Remove "</string>
+    <!--group member options end -->
+    <string name="remove_from_group">"Remove "</string>
+    <string name="from_group">" from group"</string>
+    <string name="deleting_group">" Deleting member … "</string>
+    <string name="failed_to_make_member_as_admin">Failed to make this member(s) as an admin please try again later</string>
+    <string name="failed_to_remove_member">Failed to remove member(s) please try again later</string>
+    <!--group adapters end -->
+    <!--conversations and messages  adapters start-->
+    <string name="tap_to_create_group">Tap to create this group</string>
+    <string name="you_created_this_group">You created group this group</string>
+    <string name="he_created_this_group">" created group this group"</string>
+    <string name="you_left">You left</string>
+    <string name="he_left">" left"</string>
+    <string name="document">Document</string>
+    <string name="no_application_to_show_image">"No Application Available to  show image "</string>
+    <string name="no_application_to_view_pdf">No Application Available to View PDF</string>
+    <!--conversations and messages adapters start-->
+    <string name="transfer_message_to">"Transfer  message  to "</string>
+    <string name="no_app_to_play_video">"No Application Available to play video "</string>
+    <string name="no_app_to_play_audio">"No Application Available to play audio "</string>
+    <string name="delete_all_status_dialog">Deleting All status …</string>
+    <string name="deleting">Deleting …</string>
+    <string name="updating_status">Updating status …</string>
+    <string name="your_status_updated_successfully">Your status has been deleted successfully</string>
+
+
+
+    <string name="auth_type">com.novasera.whatsclone</string>
+    <string name="reply_message">Reply</string>
+
+
+    <string name="key_message_notifications_settings_light">message_notifications_settings_light</string>
+    <string name="key_message_group_notifications_settings_tone">message_group_notifications_settings_tone</string>
+    <string name="key_message_group_notifications_settings_vibrate">message_group_notifications_settings_vibrate</string>
+    <string name="key_message_group_notifications_settings_light">message_group_notifications_settings_light</string>
+    <string name="message_notifications_settings_vibrate_off">Virabte Off</string>
+    <string name="message_notifications_settings_vibrate_on">Vibrate On</string>
+    <string name="enjoy_it">Enjoy it</string>
+    <string name="app_version">"Version "</string>
+    <string name="to_delete_your_account_from_confirm_your_phone_number">to delete your account from, confirm your phone number</string>
+    <string name="delete_user_account">DELETE MY ACCOUNT</string>
+    <string name="delete_you_from_groups"><![CDATA[> Delete you from groups]]></string>
+    <string name="delete_all_your_messages"><![CDATA[> Delete all your messages]]></string>
+    <string name="delete_your_account"><![CDATA[> Delete your account]]></string>
+    <string name="deleting_your_account_will">DELETING YOUR ACCOUNT WILL:</string>
+    <string name="alert_message_delete_account">Are you  sure that you want to delete your account</string>
+    <string name="delete_account_failed_please_try_later">Failed to delete your account please try again later</string>
+
+</resources>

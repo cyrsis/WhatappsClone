@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="app_bar_top_padding">0dp</dimen>
+	<dimen name="statusbar_size">24dp</dimen>
+
+	<dimen name="image_profile_height">55dp</dimen>
+	<dimen name="image_profile_width">55dp</dimen>
+	<dimen name="image_profile_margin">16dp</dimen>
+
+
+	<dimen name="image_member_height">35dp</dimen>
+	<dimen name="image_member_width">35dp</dimen>
+	<dimen name="image_member_margin">16dp</dimen>
+	<dimen name="name_member_size">13sp</dimen>
+
+	<!-- text-->
+	<dimen name="text_size">16sp</dimen>
+	<dimen name="view_margin_left">68dp</dimen>
+	<dimen name="view_margin_right">30dp</dimen>
+	<dimen name="fab_margin">16dp</dimen>
+	<dimen name="card_margin">16dp</dimen>
+	<dimen name="slide_down_message_items">60dp</dimen>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_rect_ripple"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/image_member_width"
+            android:layout_height="@dimen/image_member_height"
+            android:background="@drawable/bg_circle_image_holder"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/image_profile_margin" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/app_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/name_member_size"
+                android:textStyle="bold" />
+
+            <com.rockerhieu.emojicon.EmojiconTextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:textSize="10sp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorGray2" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/admin"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_buttons_admin"
+                android:gravity="center"
+                android:text="Group Admin"
+                android:padding="2dp"
+                android:textColor="@drawable/bg_buttons_text_color_admin"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/member"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_buttons_member"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Member"
+                android:textColor="@drawable/bg_buttons_text_color_member"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/view_margin_left"
+        android:layout_marginRight="@dimen/view_margin_right"
+        android:background="@color/colorGray3" />
+</LinearLayout>

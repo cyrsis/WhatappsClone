@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/key_conversations_tones"
+        android:summaryOff="@string/conversation_tones_off"
+        android:summaryOn="@string/conversation_tones_off"
+        android:title="@string/conversation_tones" />
+
+    <PreferenceCategory android:title="@string/message_notifications_settings">
+
+        <RingtonePreference
+            android:key="@string/key_message_notifications_settings_tone"
+            android:persistent="true"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="@string/notifications_settings_tone" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_message_notifications_settings_vibrate"
+            android:summaryOff="@string/message_notifications_settings_vibrate_off"
+            android:summaryOn="@string/message_notifications_settings_vibrate_on"
+            android:title="@string/message_notifications_settings_vibrate" />
+
+
+        <ListPreference
+            android:defaultValue="#03A9F4"
+            android:dialogTitle="@string/message_notifications_settings_light"
+            android:entries="@array/light_names"
+            android:entryValues="@array/light_values"
+            android:key="@string/key_message_notifications_settings_light"
+            android:title="@string/message_notifications_settings_light" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/message_group_notifications_settings">
+
+        <RingtonePreference
+            android:key="@string/key_message_group_notifications_settings_tone"
+            android:persistent="true"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary="@string/default_settings"
+            android:title="@string/notifications_settings_tone" />
+
+
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_message_group_notifications_settings_vibrate"
+            android:summaryOff="@string/message_notifications_settings_vibrate_off"
+            android:summaryOn="@string/message_notifications_settings_vibrate_on"
+            android:title="@string/message_notifications_settings_vibrate" />
+
+
+
+        <ListPreference
+            android:defaultValue="#03A9F4"
+            android:dialogTitle="@string/message_notifications_settings_light"
+            android:entries="@array/light_names"
+            android:entryValues="@array/light_values"
+            android:key="@string/key_message_group_notifications_settings_light"
+            android:summary="blue"
+            android:title="@string/message_notifications_settings_light" />
+    </PreferenceCategory>
+</PreferenceScreen>

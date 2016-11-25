@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/attach_file"
+        android:icon="@drawable/ic_attach_file_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/attach"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search_messages_group"
+        android:icon="@drawable/ic_search_24dp"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/view_group"
+        android:orderInCategory="100"
+        android:title="@string/group_info"
+        app:showAsAction="never" />
+
+
+</menu>

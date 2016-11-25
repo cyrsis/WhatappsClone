@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/chat_settings">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_enter_send"
+            android:summaryOff="@string/enter_key_off"
+            android:summaryOn="@string/enter_key_on"
+            android:title="@string/enter_key" />
+
+        <ListPreference
+            android:defaultValue="14"
+            android:dialogTitle="@string/message_font_size"
+            android:entries="@array/message_font_size_names"
+            android:entryValues="@array/message_font_size_values"
+            android:key="@string/key_message_font_size"
+            android:summary="@string/message_font_size_summary"
+            android:title="@string/message_font_size" />
+
+
+        <ListPreference
+            android:defaultValue="@color/colorGray"
+            android:dialogTitle="@string/wallpaper"
+            android:entries="@array/wallpaper_names"
+            android:entryValues="@array/wallpaper_values"
+            android:key="@string/key_wallpaper_message"
+            android:title="@string/wallpaper" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

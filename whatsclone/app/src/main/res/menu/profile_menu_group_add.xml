@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_group_name"
+        android:icon="@drawable/ic_mode_edit_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/edit_group_name"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/add_contact"
+        android:icon="@drawable/ic_person_add_24dp"
+        android:orderInCategory="100"
+        android:title="@string/add_contact"
+        app:showAsAction="always" />
+
+</menu>

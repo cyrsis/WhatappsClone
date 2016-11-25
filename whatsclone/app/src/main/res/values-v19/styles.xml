@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- ActionMode Styles -->
+        <item name="android:actionModeBackground">@color/colorGrayDarker</item>
+        <item name="android:backgroundStacked">@color/colorAccent</item>
+        <item name="android:backgroundSplit">@color/colorGrayDarker</item>
+    </style>
+
+    <!-- transparnet for profile -->
+    <style name="ProfileTheme.Detail" parent="AppTheme.Base" />
+
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowActionModeOverlay">false</item>
+        <!-- <item nameMessaging="android:windowBackground">@android:color/transparent</item> -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="option" parent="Theme.AppCompat.Light">
+
+    </style>
+</resources>

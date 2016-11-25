@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- ActionMode Styles -->
+        <item name="android:actionModeBackground">@color/colorGrayDarker</item>
+        <item name="android:backgroundStacked">@color/colorAccent</item>
+        <item name="android:backgroundSplit">@color/colorGrayDarker</item>
+    </style>
+
+    <style name="option" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="Dialog" parent="Base.Theme.AppCompat.Light.Dialog">
+
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@drawable/bg_tabs_text_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolbarSubTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <!-- les cardView styles -->
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="TextAppearance.WhatsClone.Title.Collapsed" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.WhatsClone.Title.Expanded" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextInputEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/colorGray2</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <!--buttons style-->
+
+    <style name="Buttons">
+        <item name="android:textColor">@drawable/bg_buttons_text_color_welcome</item>
+        <item name="android:background">@drawable/bg_buttons_welcome</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+
+    <style name="ButtonDelete">
+        <item name="android:textColor">@drawable/bg_buttons_text_color_welcome</item>
+        <item name="android:background">@drawable/bg_buttons_delete_account</item>
+        <item name="android:padding">6dp</item>
+    </style>
+</resources>
